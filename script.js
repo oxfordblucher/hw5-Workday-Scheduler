@@ -22,18 +22,5 @@ moment.updateLocale('en', {
     isPM: Function
 }); */
 
-var workHours = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+var workHours = ["#8am", "#9am", "#10am", "#11am", "#12noon", "#1pm", "#2pm", "#3pm", "#4pm", "#5pm", "#6pm"];
 
-for (let i = 0; i < workHours.length; i++) {
-    var newDiv = $("<div>");
-    var workHr = workHours[i];
-    if (workHr <= 12) {
-        workHr = workHours[i];
-    }else{
-        workHr = workHr - 12 + " pm";
-    }
-    newDiv.text(workHr);
-    container.append(newDiv);
-    newDiv.attr("class", "card");
-    newDiv.attr("style", "")
-    }
